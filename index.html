@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <form id="myForm" action="" onsubmit="return validateForm()" method="post">
+            <div class="formdesign" id="name">
+                <label for="fname">Name:</label>
+                <input type="text" name="fname">
+                <b><span class="formerror"> </span></b>
+            </div>            
+
+            <div class="formdesign" id="email">
+                Email: <input type="email" name="femail">
+                <b><span class="formerror"> </span></b>
+            </div>
+
+            <div class="formdesign" id="phone">
+                Phone: <input type="tel" name="fphone"><b><span class="formerror"></span></b>
+            </div>
+
+            <div class="formdesign" id="pass">
+                Password: <input type="password" name="fpass"><b><span class="formerror" </span></b>
+            </div>
+
+            <div class="formdesign" id="cpass">
+                Confirm Password: <input type="password" name="fcpass"><b><span class="formerror"></span></b>
+            </div>
+
+            <input class="but" type="submit" value="Submit">
+        </form>
+
+        <!-- Success message element -->
+        <h1 id="successMessage" class="success-message"></h1>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
